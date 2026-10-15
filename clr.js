@@ -13,6 +13,13 @@ btn.addEventListener('click', function () {
     index = (index + 1) % colors.length;
 });
 
-*/
+
 
 //task 2
+const boxes = document.querySelectorAll('.card');
+
+boxes.forEach(function (box) {
+    box.addEventListener('click', function () {
+        box.style.borderColor = "red";
+    });
+}); 
