@@ -37,9 +37,8 @@ const counter = document.getElementById('counter');
 const maxLength = 100;
 
 textarea.addEventListener('input', () => {
-    const currentLength = textarea.value.length;
-    const remaining = maxLength - currentLength;
-    counter.textContent = remaining;
+    const currentLength = textarea.value.length; 
+    counter.textContent = maxLength - currentLength;
 });
 
 
