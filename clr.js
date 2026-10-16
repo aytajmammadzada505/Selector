@@ -31,3 +31,14 @@ circle.addEventListener("dblclick", function () {
     circle.style.scale = 2
 }); 
 
+//task 4 
+const textarea = document.getElementById('txt');
+const counter = document.getElementById('counter');
+const maxLength = 100;
+
+textarea.addEventListener('input', () => {
+    const currentLength = textarea.value.length;
+    const remaining = maxLength - currentLength;
+    counter.textContent = remaining;
+});
+
