@@ -42,3 +42,11 @@ textarea.addEventListener('input', () => {
     counter.textContent = remaining;
 });
 
+
+//task 5
+const colors = document.getElementById('colors');
+colors.addEventListener('change', (Event) => {
+    const selectedColor = Event.target.value;
+    document.body.style.backgroundColor = selectedColor;
+})
+
