@@ -1,5 +1,5 @@
 
-/*task 1
+task 1
 const box = document.querySelector('#Colorbox');
 const btn = document.querySelector('#btn');
 const colors = ["red", "yellow", "orange"];
@@ -23,3 +23,11 @@ boxes.forEach(function (box) {
         box.style.borderColor = "red";
     });
 }); 
+
+//task 3 (wip)
+const circle = document.getElementById("circle");
+
+circle.addEventListener("dblclick", function () {
+    circle.style.scale = 2
+}); 
+
