@@ -1,5 +1,5 @@
 
-task 1
+// task 1
 const box = document.querySelector('#Colorbox');
 const btn = document.querySelector('#btn');
 const colors = ["red", "yellow", "orange"];
