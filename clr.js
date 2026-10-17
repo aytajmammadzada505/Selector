@@ -24,12 +24,14 @@ boxes.forEach(function (box) {
     });
 }); 
 
-//task 3 (wip)
+//task 3 
 const circle = document.getElementById("circle");
+let large = false;
 
-circle.addEventListener("dblclick", function () {
-    circle.style.scale = 2
-}); 
+circle.addEventListener("dblclick", () => {
+    large = !large;
+    circle.style.transform = large ? 'scale(1.5)' : 'scale(1)';
+});
 
 //task 4 
 const textarea = document.getElementById('txt');
