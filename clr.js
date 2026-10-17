@@ -51,3 +51,20 @@ colors.addEventListener('change', (Event) => {
     document.body.style.backgroundColor = selectedColor;
 })
 
+
+//task 6
+const former = document.getElementById('former');
+const put = document.getElementById('put');
+
+former.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const name = put.value.trim();
+    if (name) {
+        alert("Uğurludur!");
+    }
+    else {
+        alert("xəta");
+    }
+});
+
+
