@@ -67,4 +67,12 @@ former.addEventListener("submit", function (event) {
     }
 });
 
+//task 7
+const box = document.querySelector(".box");
+box.addEventListener('mouseenter', () => {
+    box.style.backgroundColor = 'brown'
+})
 
+box.addEventListener('mouseleave', () => {
+    box.style.backgroundColor = 'red'
+})
