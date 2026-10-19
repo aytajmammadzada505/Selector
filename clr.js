@@ -76,3 +76,15 @@ box.addEventListener('mouseenter', () => {
 box.addEventListener('mouseleave', () => {
     box.style.backgroundColor = 'red'
 })
+//task 8
+const buttons = document.querySelectorAll('button');
+const totalPrice = document.getElementById('total');
+let amount = 0;
+
+buttons.forEach(button => {
+    button.addEventListener('click', function () {
+        const price = Number(this.dataset.price);
+        amount += price;
+        totalPrice.textContent = amount;
+    });
+});
