@@ -88,3 +88,14 @@ buttons.forEach(button => {
         totalPrice.textContent = amount;
     });
 });
+
+//task 9
+const texts = document.getElementById('mytext');
+
+texts.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        console.log("Enter düyməsinə basıldı!");
+    }
+
+}
+)
